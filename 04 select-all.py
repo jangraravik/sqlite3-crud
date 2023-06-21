@@ -6,7 +6,7 @@ try:
 
     cur.execute('''SELECT * FROM contacts ORDER BY id DESC;''')
     #rows = cur.fetchall()
-    rows = cur.fetchmany(3)
+    rows = cur.fetchmany(100)
 
     print('Total Records:', len(rows))
 
